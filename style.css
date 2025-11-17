@@ -1,15 +1,17 @@
 body{
     margin: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
-header{
+header,footer{
    background-color: #2D2D53;
    margin: 0px;
    display: flex;
    align-items: center;
 }   
 
-h1{
+h3{
     color: #fff;
     text-align: center;
     margin-top: auto;
@@ -39,4 +41,21 @@ p{
     margin-bottom: 25px;
     background-color: #fff;
     border-radius: 25px;
+}
+
+.boutton2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    background-color: #2D2D53;
+    border-radius: 25px;
+}
+
+.footer-content{
+    color: #fff;
 }
