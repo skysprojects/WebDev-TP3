@@ -21,3 +21,22 @@ h1{
 #logo{
     margin: 25px;
 }
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2D2D53;
+    font-size: 20px;
+}
+
+.boutton{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    border-radius: 25px;
+}
