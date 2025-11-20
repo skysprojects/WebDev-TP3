@@ -1,7 +1,5 @@
 body{
     margin: 0px;
-    display: flex;
-    flex-direction: column;
 }
 
 header,footer{
@@ -10,6 +8,12 @@ header,footer{
    display: flex;
    align-items: center;
 }   
+
+footer{
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
 
 h3{
     color: #fff;
@@ -44,18 +48,26 @@ p{
 }
 
 .boutton2{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: auto;
-    margin-top: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
     background-color: #2D2D53;
     border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 41%;
+    margin-left: 41%;
 }
 
 .footer-content{
     color: #fff;
+    text-decoration: underline;
+    margin: 25px;
+}
+
+.texte-blanc{
+    color: #fff;
+    text-align: center;
 }
