@@ -112,3 +112,24 @@ p{
     height: 316px;
     width: 1292px;
 }
+
+.contact-info{
+    background-color: #2D2D53;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+h2{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#container-contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
