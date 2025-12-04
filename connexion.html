@@ -15,6 +15,47 @@
         </a>
         <h3 style="color: #2D2D53;">Nala</h3>
     </header>
+     <div id="formulaire">
+         <div id="header-formulaire">
+            <h2 style="margin: 0; font-size: 20px;">Connexion</h2>
+         </div>
+        <div id="input-container">
+            <div class="input-texte">
+                <p class="titre-input">Nom d'utilisateur</p>
+                <input type="text" id="nom">
+            </div>
+            <div class="input-texte">
+                <div style="display: flex; align-items: baseline;">
+                    <p class="titre-input">Mot de passe</p>
+                    <img src="Images/Key.png" style="margin-left: 5px; width: 20px; height: 20px;">
+                </div>
+                <div class="default-flexbox">
+                    <input type="password" id="mdp">
+                    <script>
+                        
+                    </script>
+                    <img src="Images/Eye_off.png" id="passwd-onoff">
+                    <script>
+                        let eye = document.getElementById("passwd-onoff")
+                        let inputbox = document.getElementById("mdp")
+                        var isOpen = false
+                        eye.addEventListener("click",function(){
+                            if (isOpen) {
+                                isOpen = false
+                                this.src = "Images/Eye_off.png"
+                                inputbox.type = "password"
+                            } else {
+                                isOpen = true
+                                this.src = "Images/Eye.png"
+                                inputbox.type = "text"
+                            }
+                        }) 
+                    </script>
+                </div>
+                <p style="margin: 0; font-size: 15px;"><i><u>Oubliez votre mot de passe?</u></i></p>
+            </div>
+         </div>
+     </div>
 </body>
 
 </html>
