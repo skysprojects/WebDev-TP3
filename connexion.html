@@ -15,11 +15,11 @@
         </a>
         <h3 style="color: #2D2D53;">Nala</h3>
     </header>
-     <div id="formulaire">
-         <div id="header-formulaire">
+     <div class="formulaire" style="padding-bottom: 10px;">
+         <div class="header-formulaire">
             <h2 style="margin: 0; font-size: 20px;">Connexion</h2>
          </div>
-        <div id="input-container">
+        <div class="input-container">
             <div class="input-texte">
                 <p class="titre-input">Nom d'utilisateur</p>
                 <input type="text" id="nom">
@@ -27,26 +27,23 @@
             <div class="input-texte">
                 <div style="display: flex; align-items: baseline;">
                     <p class="titre-input">Mot de passe</p>
-                    <img src="Images/Key.png" style="margin-left: 5px; width: 20px; height: 20px;">
+                    <img src="Images/clef.png" style="margin-left: 5px; width: 20px; height: 20px;">
                 </div>
                 <div class="default-flexbox">
                     <input type="password" id="mdp">
+                    <img src="Images/oeil_off.png" id="passwd-onoff">
                     <script>
-                        
-                    </script>
-                    <img src="Images/Eye_off.png" id="passwd-onoff">
-                    <script>
-                        let eye = document.getElementById("passwd-onoff")
-                        let inputbox = document.getElementById("mdp")
-                        var isOpen = false
-                        eye.addEventListener("click",function(){
-                            if (isOpen) {
-                                isOpen = false
-                                this.src = "Images/Eye_off.png"
+                        const oeil = document.getElementById("passwd-onoff")
+                        const inputbox = document.getElementById("mdp")
+                        let estOuvert = false
+                        oeil.addEventListener("click",function(){
+                            if (estOuvert) {
+                                estOuvert = false
+                                this.src = "Images/oeil_off.png"
                                 inputbox.type = "password"
                             } else {
-                                isOpen = true
-                                this.src = "Images/Eye.png"
+                                estOuvert = true
+                                this.src = "Images/oeil.png"
                                 inputbox.type = "text"
                             }
                         }) 
@@ -55,6 +52,14 @@
                 <p style="margin: 0; font-size: 15px;"><i><u>Oubliez votre mot de passe?</u></i></p>
             </div>
          </div>
+     </div>
+     <div class="default-flexbox" style="gap: 10px;">
+        <p id="switch-inscconnex">Nouveau Ici?</p>
+        <span>
+            <a href="inscription.html" class="boutton2" style="margin-left: 0px; margin-right: 0px; padding: 10px; padding-top: 5px; padding-bottom: 5px;">
+                <p class="texte-blanc" style="font-size: 19px;"><b>Inscription</b></p>
+            </a>
+        </span>
      </div>
 </body>
 
