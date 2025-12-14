@@ -11,28 +11,30 @@
 <body>
     <header style="background-color: #fff;">
         <a href="index.html">
-            <img src="Images/Logo2.png" id="logo"  alt="Logo du compagnie">
+            <img src="Images/Logo2.png" id="logo" alt="Logo du compagnie">
         </a>
         <h3 style="color: #2D2D53;">Nala</h3>
     </header>
-         <form class="formulaire" style="padding-bottom: 20px;" id="form">
+    <form class="formulaire" style="padding-bottom: 20px;" id="form">
         <div class="header-formulaire">
             <h2 style="margin: 0; font-size: 20px;">Connexion</h2>
         </div>
+
         <div class="input-container">
             <div class="input-texte2">
                 <p class="titre-input">Nom d'utilisateur</p>
                 <input type="text" id="nom" required>
                 <script>
                     var inputbox = document.getElementById("nom")
-                    inputbox.addEventListener("focus", function(){
+                    inputbox.addEventListener("focus", function () {
                         this.style.backgroundColor = "#a3bdff"
                     })
-                    inputbox.addEventListener("blur", function(){
+                    inputbox.addEventListener("blur", function () {
                         this.style.backgroundColor = ""
                     })
                 </script>
             </div>
+
             <div class="input-texte2">
                 <div style="display: flex; align-items: baseline;">
                     <p class="titre-input">Mot de passe</p>
@@ -40,7 +42,8 @@
                 </div>
                 <div class="default-flexbox">
                     <input type="password" id="mdp2" required>
-                    <img src="Images/oeil_off.png" id="passwd-onoff" alt="Oeil pour l'affichage du mot de passe" class="oeil-style">
+                    <img src="Images/oeil_off.png" id="passwd-onoff" alt="Oeil pour l'affichage du mot de passe"
+                        class="oeil-style">
                     <script>
                         const oeil = document.getElementById("passwd-onoff")
                         const inputbox = document.getElementById("mdp2")
@@ -56,36 +59,39 @@
                                 inputbox.type = "text"
                             }
                         })
-                        inputbox.addEventListener("focus", function(){
+                        inputbox.addEventListener("focus", function () {
                             this.style.backgroundColor = "#a3bdff"
                         })
-                        inputbox.addEventListener("blur", function(){
+                        inputbox.addEventListener("blur", function () {
                             this.style.backgroundColor = ""
                         })
                     </script>
                 </div>
             </div>
+
+            <!--Boutton de soumission-->
             <button type="submit" id="boutton-connexion">Connecter</button>
+
             <script>
                 let form = document.getElementById("form")
-                form.addEventListener("submit", function(e) {
+                form.addEventListener("submit", function (e) {
                     let nom = document.getElementById("nom")
                     let mdp = document.getElementById("mdp")
                     let champVide = false;
                     alert("Connexion valide!");
                 })
             </script>
-        </form>
+    </form>
     </div>
-     </div>
-     <div class="default-flexbox" style="gap: 10px;">
+    </div>
+    <div class="default-flexbox" style="gap: 10px;">
         <p>Nouveau Ici?</p>
         <span>
             <a href="inscription.html" class="boutton2" id="switch-inscconnex">
                 <p class="texte-blanc" style="font-size: 19px;"><b>Inscription</b></p>
             </a>
         </span>
-     </div>
+    </div>
 </body>
 
 </html>
