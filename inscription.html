@@ -123,6 +123,7 @@
             <!--Boutton de soumission-->
             <button type="submit" id="boutton-connexion">Créer compte</button>
 
+            <!--Valide si la confirmation du mdp-->
             <script>
                 let form = document.getElementById("form")
                 form.addEventListener("submit", function (e) {
@@ -135,7 +136,6 @@
                         alert("La confirmation n'est pas identique");
                         e.preventDefault()
                     }
-                    
                 })
             </script>
         </div>
