@@ -126,10 +126,16 @@
             <script>
                 let form = document.getElementById("form")
                 form.addEventListener("submit", function (e) {
-                    let nom = document.getElementById("nom")
-                    let mdp = document.getElementById("mdp")
-                    let champVide = false;
-                    alert("Inscription valide!");
+                    let mdp = document.getElementById("mdp2")
+                    let confirm = document.getElementById("mdp3")
+
+                    if (mdp.value == confirm.value) {
+                        alert("Inscription valide!");
+                    } else {
+                        alert("La confirmation n'est pas identique");
+                        e.preventDefault()
+                    }
+                    
                 })
             </script>
         </div>
