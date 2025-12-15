@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Style/style.css">
 </head>
 
 <body>
     <header style="background-color: #fff;">
-        <a href="index.html">
-            <img src="Images/Logo2.png" id="logo" alt="Logo du compagnie">
+        <a href="../index.html" class="default-flexbox">
+            <img src="../Style/../Style/Images/Logo2.png" id="logo" alt="Logo du compagnie">
+            <h3 style="color: #2D2D53;">Nala</h3>
         </a>
-        <h3 style="color: #2D2D53;">Nala</h3>
     </header>
+
     <form class="formulaire" style="padding-bottom: 20px;" id="form">
         <div class="header-formulaire">
             <h2 style="margin: 0; font-size: 20px;">Connexion</h2>
@@ -38,11 +39,11 @@
             <div class="input-texte2">
                 <div style="display: flex; align-items: baseline;">
                     <p class="titre-input">Mot de passe</p>
-                    <img src="Images/clef.png" class="icone" alt="Clef">
+                    <img src="../Style/Images/clef.png" class="icone" alt="Clef">
                 </div>
                 <div class="default-flexbox">
                     <input type="password" id="mdp2" required>
-                    <img src="Images/oeil_off.png" id="passwd-onoff" alt="Oeil pour l'affichage du mot de passe"
+                    <img src="../Style/Images/oeil_off.png" id="passwd-onoff" alt="Oeil pour l'affichage du mot de passe"
                         class="oeil-style">
                     <script>
                         const oeil = document.getElementById("passwd-onoff")
@@ -51,11 +52,11 @@
                         oeil.addEventListener("click", function () {
                             if (estOuvert) {
                                 estOuvert = false
-                                this.src = "Images/oeil_off.png"
+                                this.src = "../Style/Images/oeil_off.png"
                                 inputbox.type = "password"
                             } else {
                                 estOuvert = true
-                                this.src = "Images/oeil.png"
+                                this.src = "../Style/Images/oeil.png"
                                 inputbox.type = "text"
                             }
                         })

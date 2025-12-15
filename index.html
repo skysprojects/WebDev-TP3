@@ -4,17 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="Style/style.css">
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <img src="Images/Logo.png" id="logo" alt="Logo du compagnie">
+        <a href="index.html" class="default-flexbox">
+            <img src="Style/Images/Logo.png" id="logo" alt="Logo du compagnie">
+            <h3>Nala</h3>
         </a>
-        <h3>Nala</h3>
-        <a href="connexion.html" style="margin-left: auto;">
+
+        <div style="margin-left: 10px;" class="default-flexbox">
+            <a href="HTML/contact.html">
+                <p class="footer-content"><b>Contact</b></p>
+            </a>
+            
+            <a href="HTML/apropos.html">
+                <p class="footer-content"><b>À Propos</b></p>
+            </a>
+
+            <a href="HTML/inscription.html">
+                <p class="footer-content"><b>Inscription</b></p>
+            </a>
+        </div>
+
+        
+        <a href="HTML/connexion.html" style="margin-left: auto;">
             <span class="boutton">
                 <p><b>Connectez-vous</b></p>
             </span>
@@ -32,9 +48,9 @@
 
     <!--Boutton pour l'inscription-->
     <span>
-        <a href="inscription.html" class="boutton2">
+        <a href="HTML/inscription.html" class="boutton2">
             <p class="texte-blanc" style="font-size: 19px;"><b>Inscription</b></p>
-            <img src="Images/Arrow 1.png" style="height: 15px; margin-left: 10px;"
+            <img src="Style/Images/Arrow 1.png" style="height: 15px; margin-left: 10px;"
                 alt="Flêche blanc qui pointe à droite">
         </a>
     </span>
@@ -42,7 +58,7 @@
     <!--Article pour les préoccupation environnementaux-->
     <article style="display: flex; justify-content: center; align-items: center;">
         <div id="eco-texte">
-            <img src="Images/image_1.png" alt="Bras prosthétique">
+            <img src="Style/Images/image_1.png" alt="Bras prosthétique">
             <p class="texte-blanc" style="font-size: 40px;">Nous sommes très prudents quant à l'utilisation de matériaux
                 nocifs pour que nos produits restent respectueux de l'environnement!</p>
         </div>
@@ -54,7 +70,7 @@
         <div style="margin-left: 10px;">
             <div class="default-flexbox">
                 <h3 style="color: #2D2D53; font-size: 25px; margin-right: 2px;">Visionne-le</h3>
-                <img src="Images/arrowdown.png">
+                <img src="Style/Images/arrowdown.png">
             </div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Ipw_2A2T_wg?si=qb6-Voq_o9NOnMbT"
                 title="YouTube video player" frameborder="0"
@@ -63,10 +79,10 @@
         </div>
     </article>
     <footer>
-        <a href="contact.html">
+        <a href="HTML/contact.html">
             <p class="footer-content"><b>Contact</b></p>
         </a>
-        <a href="apropos.html">
+        <a href="HTML/apropos.html">
             <p class="footer-content"><b>À Propos</b></p>
         </a>
     </footer>
